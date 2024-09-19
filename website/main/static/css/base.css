@@ -1,0 +1,119 @@
+ul {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+.menu {
+    display: flex; /* Включаем флексбокс для горизонтального выравнивания */
+    justify-content: space-around; /* Распределяем элементы по ширине контейнера */
+    background-color: #333; /* Цвет фона меню */
+}
+
+.menu li {
+    flex: 1; /* Каждому элементу списка назначаем равную ширину */
+    text-align: center; /* Центрируем текст внутри элементов */
+}
+
+.menu a {
+    display: block; /* Делаем ссылки блочными элементами */
+    color: white; /* Цвет текста ссылок */
+    padding: 14px 20px; /* Отступы внутри ссылок */
+    text-decoration: none; /* Убираем подчеркивание */
+    font-size: 16px; /* Размер шрифта */
+}
+
+.menu a:hover {
+    background-color: #575757; /* Цвет фона при наведении */
+}
+
+/* Стили для контейнера */
+.container {
+    width: 80%;
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+/* Основные стили заголовков */
+h1 {
+    font-size: 2em;
+    margin-bottom: 0.5em;
+    text-align: center;
+}
+
+h2 {
+    font-size: 1.5em;
+    margin-bottom: 1em;
+    text-align: center;
+}
+
+/* Стили для формы */
+.task-form {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.form-group {
+    display: flex;
+    flex-direction: column;
+}
+
+.form-group label {
+    margin-bottom: 5px;
+}
+
+input[type="text"],
+textarea {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+textarea {
+    resize: vertical;
+    min-height: 100px;
+}
+
+/* Стили для кнопок */
+.btn {
+    padding: 10px 20px;
+    border: none;
+    border-radius: 4px;
+    color: #fff;
+    cursor: pointer;
+    text-align: center;
+    font-size: 1em;
+}
+
+.btn-success {
+    background-color: #28a745;
+}
+
+.btn-success:hover {
+    background-color: #218838;
+}
+
+/* Стили для отображения задач */
+.tasks {
+    margin-top: 20px;
+}
+
+.task {
+    padding: 15px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    margin-bottom: 10px;
+    background-color: #f9f9f9;
+}
+
+.task h3 {
+    margin-top: 0;
+    font-size: 1.2em;
+}
+
+.task p {
+    margin: 0;
+}
